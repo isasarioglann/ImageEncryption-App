@@ -32,7 +32,7 @@ def create_db():
     conn = mysql.connector.connect(
         host="localhost",
         user="root",  # Kullanıcı adınızı buraya yazın
-        password="1234",  # Şifrenizi buraya yazın
+        password="",  # Şifrenizi buraya yazın
         database="goruntu_sifreleme"
     )
     c = conn.cursor()
