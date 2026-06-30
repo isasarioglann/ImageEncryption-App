@@ -1,0 +1,17 @@
+# Python önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite veritabanı (yerel test dosyası)
+*.db
+*.sqlite3
+
+# PyInstaller çıktıları (s.spec veya exe oluştururken gelen loglar)
+build/
+dist/
+*.spec
+
+# Sanal ortam (Virtual Environment)
+venv/
+.venv/
