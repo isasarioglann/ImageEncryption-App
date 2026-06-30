@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görüntü Şifreleme Uygulaması</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #video {
+            max-width: 100%;
+            border: 2px solid #fff;
+        }
+        #encrypted {
+            max-width: 100%;
+            border: 2px solid #fff;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Görüntü Şifreleme Uygulaması</h1>
+
+    <video id="video" autoplay style="display: none;"></video>
+    <br><br>
+    <canvas id="originalCanvas" style="visibility: visible;"></canvas>
+<canvas id="encryptedCanvas" style="visibility: visible;"></canvas>
+
+    <button id="toggleCanvas">Canvas'ı Gizle/ Göster</button>
+    <button id="saveBtn">Kaydet</button>
+    
+    <script src="algorithms.js"></script>
+    <script>
+        // Kaydet butonunun event listener'ı burada
+        const saveBtn = document.getElementById('saveBtn');
+        saveBtn.addEventListener('click', () => {
+            console.log('Kaydet butonuna tıklandı!');
+            // Diğer işlemler burada olacak
+        });
+    </script>
+</body>
+</html>
